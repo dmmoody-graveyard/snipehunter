@@ -14,7 +14,7 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'devise', git: 'git@github.com:plataformatec/devise.git'
 
 group :development, :test do
-  gem 'rspec-rails'
+  gem "rspec-rails", "3.5.0.beta1"
   gem 'byebug'
   gem 'pry'
 end
