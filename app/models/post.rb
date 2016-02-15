@@ -3,4 +3,5 @@ class Post < ActiveRecord::Base
   validates :message, :presence => true
 
   belongs_to :user
+  after_create_commit { PostRelayJob.perform_later(self) }
 end
